@@ -1,2 +1,3 @@
-# workscripts
-My personal scripts repository
+# My personal scripts repository
+
+This is my personal script repository. 
