@@ -1,16 +1,21 @@
 #!/usr/bin/env python
 
+
+#Updating a existing ticket in service now
+
+
 from suds import *
 wsdl_url='<service now wsdl URL>'
 try:
   cli=client.Client(url=wsdl_url,username='<username>',password='password')
-  cli.service.update(sys_id='<Service_req>',comments='Machines <ip_list> created. Hence closing the ticket', incident_state=6)
+  cli.service.update(sys_id='<Service_req>',comments='Activity done. Hence closing the ticket', incident_state=6)
   print "Sysid <Service_req> has been closed succesfully"
 except Exception as e:
   print "Failure in closing the ticket due to error" + str(e)
   exit(1)
 
 
+#Creating a new ticket in service now
 
 #!/usr/bin/env python
 
